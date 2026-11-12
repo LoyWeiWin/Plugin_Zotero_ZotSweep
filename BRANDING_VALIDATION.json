@@ -1,0 +1,9 @@
+{
+  "name": "ZotSweep",
+  "version": "1.0.0",
+  "combined_tests_passed": 61,
+  "javascript_syntax": "passed",
+  "xhtml_xml": "passed",
+  "xpi_matches_source": true,
+  "live_zotero_test": "not repeated for branding release"
+}

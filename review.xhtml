@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8" /><title>ZotSweep</title><link rel="stylesheet" href="review.css" /><script defer="defer" src="review.js"></script></head>
+<body>
+<header><h1>ZotSweep</h1><p>Find PDF files missing from this computer and review what moves to Trash.</p></header>
+<section class="controls" aria-label="Scan settings">
+<label>Scan <select id="scope"><option value="selected">Selected items</option><option value="library">Current library</option></select></label>
+<label>Move to Trash <select id="mode"><option value="attachments">Missing PDF attachments</option><option value="parents">References with all PDFs missing</option></select></label>
+<div class="scan-buttons"><button id="scan">Scan</button><button id="stop" disabled="disabled">Stop</button></div>
+<label class="pending"><input id="include-empty" type="checkbox" checked="checked" /> Include references with no attachments</label>
+<label class="pending"><input id="include-pending" type="checkbox" /> Include PDFs marked for a Zotero download</label>
+<p id="mode-help">Only missing PDF attachment records move to Trash. Their parent references are kept.</p>
+</section>
+<p class="hint">Missing locally can include files that have not synced yet. Existing PDF files are kept.</p>
+<div class="status"><p id="summary" role="status" aria-live="polite">Choose a scope and scan.</p><progress id="progress" max="1" value="0" hidden="hidden"></progress></div>
+<div class="table-tools"><label><input id="select-all" type="checkbox" /> Select all matching items</label><label><input id="show-available" type="checkbox" /> Show available PDFs</label></div>
+<main class="table-wrap"><table><thead><tr><th class="check"><span class="sr-only">Selected</span></th><th>Reference</th><th>Attachment</th><th>Result</th><th>Expected file path</th></tr></thead><tbody id="rows"></tbody></table><p id="empty">Scan results appear here.</p></main>
+<footer><p id="selection">0 selected. Items can be restored from Zotero Trash.</p><button id="close">Close</button><button id="trash" class="primary" disabled="disabled">Move selected to Trash</button></footer>
+</body></html>

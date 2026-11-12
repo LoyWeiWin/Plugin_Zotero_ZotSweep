@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ZotSweep",
+  "version": "1.0.0",
+  "description": "Review missing PDF attachments and references without attachments, and move chosen records to Zotero Trash.",
+  "author": "Prepared for Loy",
+  "applications": {
+    "zotero": {
+      "id": "missing-pdf-cleaner@local.zotero",
+      "update_url": "https://updates.invalid/missing-pdf-cleaner.json",
+      "strict_min_version": "10.0",
+      "strict_max_version": "10.0.*"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  }
+}
