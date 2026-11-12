@@ -54,11 +54,7 @@ Windows location checks account for drive letters and UNC shares. On Unix-like s
 
 ## Compatibility and validation
 
-The manifest targets Zotero 10.0.x. ZotSweep does not require ZotFile.
-
-The 1.0.0 branding release passed 41 automated logic tests, JavaScript syntax checks, XHTML parsing and source/XPI parity checks. Windows path handling is simulated in tests; it is not native Windows integration testing. Earlier integration evidence is retained in `LEGACY_TEST_RESULTS.json`. Live Zotero and native Windows testing have not been repeated for this branding release.
-
-The original add-on ID is retained. If Zotero refuses to replace the earlier 1.1.0 build with this 1.0.0 build, remove the older add-on, restart Zotero, then install ZotSweep.
+The manifest targets Zotero 10.0.x.
 
 ## Build and test
 
@@ -75,8 +71,5 @@ The build produces `dist/ZotSweep_v1.0.0.xpi`. Application files are at the repo
 
 File checks run locally. The plugin uses Zotero's Trash API for record changes. Normal Zotero sync may propagate those changes. Automatic plugin updates are disabled; install later versions manually.
 
-Licensed under [MIT](LICENSE). This is an independent plugin and is not affiliated with Zotero.
+Licensed under [GPLV3](LICENSE). This is an independent plugin and is not affiliated with Zotero.
 
-## Included logo
-
-The generated ZotSweep logo is bundled with the plugin. The manifest supplies 48, 96 and 128 pixel transparent PNG icons for the Plugins manager. The full logo is included in the source. Version remains 1.0.0.
